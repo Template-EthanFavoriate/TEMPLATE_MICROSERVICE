@@ -1,0 +1,4 @@
+include README.md
+recursive-include keplerapp_tbcheck/static *
+recursive-include keplerapp_tbcheck/templates *
+recursive-include keplerapp_tbcheck/templatetags *

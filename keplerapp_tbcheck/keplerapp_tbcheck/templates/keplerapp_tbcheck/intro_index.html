@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>PHS Django Microservice Introduction</title>
+    {% load static %}
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "keplerapp_tbcheck/dist/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "keplerapp_tbcheck/dist/css/bootstrap-theme.min.css" %}" rel="stylesheet">
+    <link href="{% static "keplerapp_tbcheck/theme.css" %}" rel="stylesheet">
+    <script src="{% static "keplerapp_tbcheck/assets/js/ie-emulation-modes-warning.js" %}"></script>
+    <link href="{% static "keplerapp_tbcheck/carousel.css" %}" rel="stylesheet">
+  </head>
+
+
+
+
+  <body role="document">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><b>PHS_DEV Django Tutorial</b></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+        <!-- Source Control Mar22.2014 -->
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><b>PHS_DEV</b></a></li>
+          <li><a href="https://cernerhps.com/home/">Implantation</a></li>
+          <li><a href="https://wiki.ucern.com/display/associates/Cerner+HealthPlan+Services+IP">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">OtherProjects<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="http://kepler.yinicsoft.com"><b>OAUTH 2.0</b></a></li>
+              <li><a href="http://muller.yinicsoft.com"><b>PHS_APP_TEMP</b></a></li>
+              <li><a href="http://yinicsoft.com"><b>...</b></a></li>
+             <li class="divider"></li>
+              <li class="dropdown-header">Beta Projects</li>
+              <li><a href="http://search.ethanwang.org"><b>CHPS MODEL</b></a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Source Control Mar22.2014 -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+   
+
+
+
+ <h1>Introducing <span class="text-muted">PHS_DEV Django microservice template</span></h1>
+      
+      
+      <p class="lead">Code below makes you print something from controller:
+      <span class="visible-md-block visible-lg-block">
+      <p class="bg-success">
+         <font class="text-muted" style="font-size: 300%">
+        <br />
+          <kbd>usage</kbd>  &#123&#123dictionary_key_A&#125;&#125;</b>
+        <br /><br />
+         </font>
+      </p>
+      <p class="lead">
+      </span>
+      And it executes like this:
+      <b>Check page</b>
+      this is key A and its value:
+      {{dictionary_key_A}}
+      
+      
+      
+      
+      
+      
+      <p class="lead">Code below makes you print something from controller, which come from model:
+      <span class="visible-md-block visible-lg-block">
+      <p class="bg-success">
+        <font class="text-muted" style="font-size: 300%">
+        <br />
+         <kbd>usage</kbd> from keplerapp_tbmodel.models import Employee</b>
+        <br /><br />
+        </font>
+      </p>
+      <p class="lead">
+      </span>
+      And it executes like this:
+      
+      <table class="table table-striped">
+        {% for o in sec_orglist%}
+         <tr><td>{{o}}</td></tr>
+        {% endfor%}
+      </table>
+
+       
+<hr class="featurette-divider">
+         <p class="lead">To get you started. Check out our github firstgot to our git hub place and download our demo and you may start from there</p>
+      <p align="middle" >
+      <span class="visible-md-block visible-lg-block">
+      <p class="bg-success">
+           <font class="text-muted" style="font-size: 300%">
+          <br />
+            <kbd>git clone</kbd>  http://github.cerner.com/PHS-Dev<b>&lt;app name&gt;</b>
+          <br /><br />
+           </font>
+      </p>
+      </span>
+      </p>
+      
+      
+      
+
+
+<hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-8">
+                <h2 class="featurette-heading">Free to Use. <span class="text-muted">Free to distribute.</span></h2>
+                <p class="lead">If you use think this project is useful to you or you have benefit from it, would you mind also contribute to it by do some updating/enhancement.</p>
+              </div>
+              <div class="col-md-4">
+                <img class="featurette-image img-responsive" src="{% static "keplerapp_tbcheck/assets/img/content-33.jpg" %}" alt="Generic placeholder image">
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <!-- Source Control Mar25.2014 -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Developed at Cerner, But under ASF license &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+      <!-- Source Control Mar25.2014 -->
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{% static "keplerapp_tbcheck/dist/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "keplerapp_tbcheck/assets/js/docs.min.js" %}"></script>
+    <script src="{% static "keplerapp_tbcheck/assets/js/ie10-viewport-bug-workaround.js" %}"></script>
+  </body>
+</html>
