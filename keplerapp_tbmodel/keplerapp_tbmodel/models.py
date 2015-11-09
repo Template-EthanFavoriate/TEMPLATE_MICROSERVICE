@@ -6,7 +6,7 @@
 	to release:
 	cd /srv/Eclipse-Wrokspace
 	pip install ./keplerapp_tbmodel --upgrade
-	
+
 	employee.py
 	class Employee
 '''
@@ -24,7 +24,7 @@ class Employee(models.Model):
 
 	def __unicode__(self):
 		return u'System: %s'%self.EmpName
-		
+
 	class Meta:
 		app_label = 'keplerapp_tbmodel'
 		db_table = u'employee'
@@ -33,7 +33,7 @@ class Employee(models.Model):
 	@classmethod
 	def get_Name_by_EmpID(cls,EmpID):
 		return cls.objects.filter(EmpID=EmpID)
-	
+
 	@classmethod
 	def get_Name_by_OrgID(cls,OrgId):
 		return cls.objects.filter(OrgId=OrgId)
@@ -45,12 +45,12 @@ class Employee(models.Model):
 	@classmethod
 	def prepare_data(cls):
 		Employee(OrgId='2',EmpLevelCode=1,EmpName='Ethan W').save()
-		Employee(OrgId='2',EmpLevelCode=1,EmpName='Clint H').save()
-		Employee(OrgId='2',EmpLevelCode=2,EmpName='Brad G').save()
+		Employee(OrgId='2',EmpLevelCode=1,EmpName='Tom H').save()
+		Employee(OrgId='2',EmpLevelCode=2,EmpName='Eric G').save()
 		Employee(OrgId='3',EmpLevelCode=1,EmpName='Larry E').save()
 		Employee(OrgId='3',EmpLevelCode=2,EmpName='Larry P').save()
-		
-		
+
+
 #	#Return list ['F','M','SELF','SPOUSE']
 #	@classmethod
 #	def get_ruleset_by_client(cls,NomenSourceSystem):
